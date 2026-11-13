@@ -1,0 +1,1 @@
+module.exports={evalExpr:s=>eval(s.replace(/[+-]{2,}/g,m=>'-+'[m.split('-').length%2]).replace(/[\d.]+/g,m=>+m))}
